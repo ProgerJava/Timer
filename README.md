@@ -6,13 +6,16 @@
 </div>
 
 ## :triangular_flag_on_post:About
-📱 App for every day shopping. Create, edit and update your shopping list right on your phone📝
+🕛 Application for working with time🕧
+Use basic timers and add your own🕐 choose a unique design using the settings🌟
 ## :white_check_mark:Goals
 <ul>
-    <li>studying the android sdk</li>
+    <li>practical use of the MVVM pattern</li>
+  <li>studying the android sdk</li>
     <li>improving knowledge of the Kotlin language</li>
     <li>working with the database</li>
     <li>programming skills training</li>
+  <li>working with time</li>
 </ul>
 
 ##
