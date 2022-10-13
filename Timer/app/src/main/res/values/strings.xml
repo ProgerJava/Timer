@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Timer</string>
+    <string name="formatTimer">00:00:00</string>
+    <string name="formatTimer2">00:00</string>
+    <string name="time">Время</string>
+    <string name="createNewTimer">Добавь свой таймер</string>
+    <string name="globalTime">Текущее время</string>
+    <string name="formatTimer3">00:00:00 PM</string>
+    <string name="Setting">Настройки</string>
+    <string name="titleBackground">Выберите фон</string>
+    <string name="titleTextColor">Выберите цвет текста</string>
+    <string name="titleMusic">Добавьте звук</string>
+
+</resources>
