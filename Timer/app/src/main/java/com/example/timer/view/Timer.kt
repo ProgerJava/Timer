@@ -127,18 +127,26 @@ class Timer : AppCompatActivity() {
         counterSecond = 0
         text.text = String.format("%02d:%02d", counterMinute, counterSecond)
         if (flag) {
-            Thread () {
-                text.background = getDrawable(R.drawable.style2)
-                Thread.sleep(1500)
-                text.background = getDrawable(R.drawable.style1)
-                Thread.interrupted()
+            val countDownTimer = object : CountDownTimer(1500, 1000) {
+                override fun onTick(millisUntilFinished: Long) {
+                    text.background = getDrawable(R.drawable.style2)
+                }
+
+                override fun onFinish() {
+                    text.background = getDrawable(R.drawable.style1)
+                    cancel()
+                }
             }.start()
         } else {
-            Thread () {
-                text.background = getDrawable(R.drawable.style3)
-                Thread.sleep(1500)
-                text.background = getDrawable(R.drawable.style1)
-                Thread.interrupted()
+            val countDownTimer = object : CountDownTimer(1500, 1000) {
+                override fun onTick(millisUntilFinished: Long) {
+                    text.background = getDrawable(R.drawable.style3)
+                }
+
+                override fun onFinish() {
+                    text.background = getDrawable(R.drawable.style1)
+                    cancel()
+                }
             }.start()
         }
     }
